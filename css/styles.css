@@ -1,16 +1,144 @@
+:root {
+    --main-font: 'Bebas Neue', sans-serif;
+    --black-text-color: #0F1F1C;
+    --white-text-color: #FFFFFF;
+    --akcent-color: #E30000;
+    --main-bg-color: #EAC991;
+    --secondary-bg-color: #D9B579;
+    --bright-bg-color: #F8EEDD;
+
+    --duration: 250ms;
+    --timing-function: cubic-bezier(0.4,0,0.2,1);
+
+}
+
 .hidden {
     display: none;
 }
 
-.hero__heading {
-    font-family: "Bebas Neue", sans-serif;
-    font-weight: 400;
+html {
+    scroll-behavior: smooth;
+    /* font-family: var(--main-font); */
+}
+
+body {
+    width: 100%;
+    font-family: var(--main-font);
+    color: var(--black-text-color);
+    background-color: var(--main-bg-color);
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.section {
+    padding: 20x 0;
+}
+
+/* .link {
+    text-decoration: none;
+    color: currentColor;
+} */
+
+.list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+ }
+  
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    font-family: "Bebas Neue Cyrillic";
+    /* src: url("BebasNeueCyrillic.ttf"); */
+    font-weight: normal;
     font-style: normal;
 }
 
-html {
-    font-family: "Bebas Neue", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    text-transform: uppercase;
+p {
+    margin: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.akcent {
+    color: var(--akcent-color);
+}
+
+.header {
+    height: 40px;
+}
+
+.hero__heading {
+    margin: 0 15px;
+    font-size: 24px;
+    text-align: center;
+    /* min-width: 300px; */
+}
+
+.hero__thumb {
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.hero__title {
+    margin: 0 15px;
+    font-size: 20px;
+    color: var(--akcent-color);
+}
+
+.hero__sub-title {
+    margin: 0 15px;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+}
+
+.hero__decor {
+    height: 60px;
+    background-color: #BD9353;
+    border-radius: 30px;
+}
+
+.hero__list {
+    padding: 20px 40px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    background-color: var(--bright-bg-color);
+    border-radius: 20px;
+    text-align: center;
+}
+
+.hero__list>li:not(:last-child) {
+    margin-bottom: 12px;
+}
+
+.hero__list>li>h4 {
+    font-size: 20px;
+    letter-spacing: 0.04em;
 }
