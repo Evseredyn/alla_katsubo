@@ -96,6 +96,7 @@ img {
 }
 
 .hero__heading {
+    position: relative;
     margin: 0 15px;
     font-size: 24px;
     text-align: center;
@@ -103,7 +104,12 @@ img {
 }
 
 .hero__heading::after {
-    
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 75px;
+    height: 3px;
+    color: var(--akcent-color);
 }
 
 .hero__thumb {
