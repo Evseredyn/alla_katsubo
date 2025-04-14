@@ -72,7 +72,7 @@ h5,
 h6 {
     margin: 0;
     font-family: "Bebas Neue Cyrillic";
-    src: url("./css/fonts/Bebas_Neue_Cyrillic.ttf");
+    /* src: url("./css/fonts/Bebas_Neue_Cyrillic.ttf"); */
     font-weight: normal;
     font-style: normal;
 }
