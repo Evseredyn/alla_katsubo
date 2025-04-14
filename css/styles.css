@@ -72,7 +72,6 @@ h5,
 h6 {
     margin: 0;
     font-family: "Bebas Neue Cyrillic";
-    /* src: url("./css/fonts/Bebas_Neue_Cyrillic.ttf"); */
     font-weight: normal;
     font-style: normal;
 }
@@ -130,9 +129,23 @@ img {
 }
 
 .hero__decor {
+    position: relative;
     height: 60px;
     background-color: #BD9353;
     border-radius: 30px;
+
+    /* background-image: url(./images/picture_1.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center; */
+}
+
+.hero__image {
+    position: absolute;
+    bottom: 0;
+    right: 25px;
+    width: 190px;
+
 }
 
 .hero__list {
