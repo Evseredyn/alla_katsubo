@@ -12,6 +12,7 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css" integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./libs/youtubeLightbox/youtubeLightbox.css">
     <link rel="stylesheet" href="./fonts/Bebas_Neue_Cyrillic/stylesheet.css" type="text/css">    
 </head>
 <body>
@@ -50,13 +51,21 @@
         <div class="container">
             <h2 class="story__heading">моя нова історія успіху</h2>
             <ul class="story__list list">
-                <li class="story__item">В 2022 році виїхала з України до Словаччини. Весь Бізнес залишився в окупації. Не знаючи мови, не маючи знайомих, почала життя з початку. Став вибір як заробляти на життя:
+                <li class="story__item">
+                    <p>В 2022 році виїхала з України до Словаччини. Весь Бізнес залишився в окупації. Не знаючи мови, не маючи знайомих, почала життя з початку. Став вибір як заробляти на життя:
+                    </p>
                 </li>
-                <li class="story__item">- Йти працювати на завод? Я все життя працювала на СЕБЕ, я не уявляю собі графіків і начальників. Ні!
+                <li class="story__item">
+                    <p>- Йти працювати на завод? Я все життя працювала на СЕБЕ, я не уявляю собі графіків і начальників. Ні!
+                    </p>
                 </li>
-                <li class="story__item">- Відкрити знову традиційний Бізнес? Прив'язати себе знов до того, що не зможу забрати потім із собою? Знову робити постійні вкладання? Ні!
+                <li class="story__item">
+                    <p>- Відкрити знову традиційний Бізнес? Прив'язати себе знов до того, що не зможу забрати потім із собою? Знову робити постійні вкладання? Ні!
+                    </p>
                 </li>
-                <li class="story__item">- ОНЛАЙН! Готовий бізнес з потужним німецьким брендом, перевірений роками. Якість, висока оборотність, європейська сертифікація — основні критерії для побудови надійного бізнесу. ТАК!
+                <li class="story__item">
+                    <p>- ОНЛАЙН! Готовий бізнес з потужним німецьким брендом, перевірений роками. Якість, висока оборотність, європейська сертифікація — основні критерії для побудови надійного бізнесу. ТАК!
+                    </p>
                 </li>
             </ul>
         </div>    
@@ -72,10 +81,10 @@
                     </div>
                     <div class="benefites__wrapper">
                         <ul class="benefites__list">
-                            <li class="benefites__item">складських приміщень</li>
-                            <li class="benefites__item">вкладень у товар</li>
-                            <li class="benefites__item">освіти та дипломів</li>
-                            <li class="benefites__item">досвіду та спеціальної підготовки</li>
+                            <li class="benefites__item"><p>складських приміщень</p></li>
+                            <li class="benefites__item"><p>вкладень у товар</p></li>
+                            <li class="benefites__item"><p>освіти та дипломів</p></li>
+                            <li class="benefites__item"><p>досвіду та спеціальної підготовки</p></li>
                         </ul>
                     </div>
                 </div>
@@ -85,10 +94,10 @@
                     </div>
                     <div class="benefites__wrapper">
                         <ul class="benefites__list">
-                            <li class="benefites__item">найманих працівників та зарплат</li>
-                            <li class="benefites__item">прив’язки до певного місця (все з тобою у телефоні)</li>
-                            <li class="benefites__item">зобов’язань перед постачальниками</li>
-                            <li class="benefites__item">складної звітності та графіків</li>
+                            <li class="benefites__item"><p>найманих працівників та зарплат</p></li>
+                            <li class="benefites__item"><p>прив’язки до певного місця (все з тобою у телефоні)</p></li>
+                            <li class="benefites__item"><p>зобов’язань перед постачальниками</p></li>
+                            <li class="benefites__item"><p>складної звітності та графіків</p></li>
                         </ul>
                     </div>
                 </div>
@@ -96,8 +105,20 @@
         </div>
     </section>
 <!--YouTube LightBox-->
-    <section class="youtube section">
-    <h2 class="youtube__heading">про компанію</h2>         
+    <section class="video section">
+        <div class="container">
+            <h2 class="video__heading">про компанію</h2>  
+            <a href="https://youtu.be/p6iYhmu34Zo" data-youtubeLightbox class="video__link">
+                <img src="./images/video/play-button.svg" alt="" class="video__icon">
+                <img src="./images/video/video-img-1.jpg" alt="" class="video__img">
+            </a>
+            <h2 class="video__heading">суть бізнесу</h2>  
+            <a href="https://youtu.be/9jdxkHjPz_E" data-youtubeLightbox class="video__link">
+                <img src="./images/video/play-button.svg" alt="" class="video__icon">
+                <img src="./images/video/video-img-2.jpg" alt="" class="video__img">
+            </a>
+        </div>
+    <!-- <h2 class="video__heading">про компанію</h2>         
     <div id="youtubelightbox" class="youtubelightbox">
         <div class="youtubelightbox__centeredchild">
             <div class="youtubelightbox__videowrapper">
@@ -105,14 +126,14 @@
             </div>
         </div>
     </div>
-    <h2 class="youtube__heading">суть бізнесу</h2>         
+    <h2 class="video__heading">суть бізнесу</h2>         
     <div id="youtubelightbox" class="youtubelightbox">
         <div class="youtubelightbox__centeredchild">
             <div class="youtubelightbox__videowrapper">
                 <div id="youtubelightboxPlayer"></div>
             </div>
         </div>
-    </div>
+    </div> -->
     </section>
 <!--Pains-->
     <section class="pains section hidden">
@@ -246,8 +267,24 @@
             <p class="cta__sub-title">то заповнюйте форму для запису на консультацію і отримайте особистий план для реалізації ваших цілей.</p>
         </div>
     </div>
-    <div class="footer"></div>
 </section>
-</main>    
+</main>
+<footer class="footer">
+    <img src="images/footer_bg-2.jpg" alt="">
+</footer>
+
+    
+<!-- YouTube LightBox -->
+<div id="youtubelightbox" class="youtubelightbox">
+    <div class="youtubelightbox__centeredchild">
+        <div class="youtubelightbox__videowrapper">
+            <div id="youtubelightboxPlayer"></div>
+        </div>
+    </div>
+</div>
+
+<script src="./libs/youtubeLightbox/youtubeLightbox.js"></script>
+
+<script src="./js/main.js"></script>
 </body>
 </html>
