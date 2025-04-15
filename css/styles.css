@@ -308,6 +308,7 @@ img {
     padding-right: 10px;
     color: var(--white-text-color);
 }
+
 .pains__item>p {
     font-size: 14px;
     letter-spacing: 0.02em;
@@ -315,6 +316,20 @@ img {
     color: var(--white-text-color);
     opacity: 0.8;
 }
+.promises {
+    padding: 30px 0px 25px 10px;
+}
+
+.promises__heading {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: var(--akcent-color);
+}
+
+.pains__item>p {
+    color: var(--black-text-color);
+}
+
 /* .footer {
     width: 26px;
     height: auto;
