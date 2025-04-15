@@ -6,6 +6,7 @@
     --main-bg-color: #EAC991;
     --secondary-bg-color: #D9B579;
     --bright-bg-color: #F8EEDD;
+    --thumb-bg-color: #D2A35C;
 
     --duration: 250ms;
     --timing-function: cubic-bezier(0.4,0,0.2,1);
@@ -214,16 +215,16 @@ img {
 }
 
 .benefites__heading {
+    text-align: center;
     margin-bottom: 15px;
     font-size: 24px;
-    text-align: center;
 }
 
 .benefites__thumb {
     padding-top: 2px;
     padding-bottom: 5px;
     border-radius: 20px;
-    background-color: #D2A35C;
+    background-color: var(--thumb-bg-color);
 }
 
 .benefites__thumb:not(:last-child) {
@@ -284,6 +285,36 @@ img {
     border-radius: 20px;
 }
 
+.pains {
+    padding: 15px 0;
+    background-color: var(--secondary-bg-color);
+}
+
+.pains__heading {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 24px;
+    color: var(--akcent-color);
+}
+
+.pains__decor {
+    padding: 10px 10px 10px 0;
+    background-color: var(--thumb-bg-color);
+    border-radius: 20px;
+}
+
+.pains__list {
+    margin: 0;
+    padding-right: 10px;
+    color: var(--white-text-color);
+}
+.pains__item>p {
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    line-height: 1.2;
+    color: var(--white-text-color);
+    opacity: 0.8;
+}
 /* .footer {
     width: 26px;
     height: auto;
