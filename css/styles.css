@@ -406,7 +406,7 @@ height: auto;
 }
 
 .reviews {
-    padding: 15px 30px;
+    padding: 15px 15px;
 }
 
 .reviews__heading {
@@ -484,6 +484,102 @@ height: auto;
   display: block;
 }
 
+.cta {
+    padding: 25px 15px;
+    background-color: var(--secondary-bg-color);
+}
+
+.cta__sub-title {
+    width: 260px;
+    font-size: 20px;
+}
+
+.cta__sub-title:not(:first-child) {
+    margin-bottom: 30px;
+}
+
+.contact-us__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 280px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px 20px;
+    background-color: #E6CC9F;
+    border: 2px solid var(--black-text-color);
+    border-radius: 20px;
+}
+
+.contact-us__title {
+    margin-bottom: 30px;
+    font-family: "Bebas Neue Cyrillic";
+    font-size: 32px;
+    color: var(--akcent-color);
+}
+
+.contact-us__input {
+    display: block;
+    text-align: center;
+    max-width: 220px;
+    height: 50px;
+    margin-bottom: 30px;
+    padding: 17px 20px 13px;
+    font-family: "Bebas Neue Cyrillic";
+    font-size: 20px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    /* box-shadow: none; */
+}
+
+.contact-us__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 50px;
+    padding-top: 3px;
+    font-family: "Bebas Neue Cyrillic";
+    font-size: 28px;
+    line-height: 1;
+    text-align: center;
+    color: var(--white-text-color);
+    background-color: var(--akcent-color);
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.cta__thumb {
+    display: flex;
+    gap: 20px;
+}
+
+.cta__thumb img {
+    width: 35px;
+    height: 20px;
+}
+
+.cta__text {
+    font-size: 20px;
+}
+
+.cta__sub-text {
+    font-size: 20px;
+}
+
+.socials__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+    margin-top: 30px;
+    padding: 0;
+    list-style: none;
+}
 
 /* .footer {
     width: 26px;
