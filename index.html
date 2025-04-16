@@ -9,11 +9,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="./fonts/Bebas_Neue_Cyrillic/stylesheet.css" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css" integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
     <link rel="stylesheet" href="./libs/youtubeLightbox/youtubeLightbox.css">
-    <link rel="stylesheet" href="./fonts/Bebas_Neue_Cyrillic/stylesheet.css" type="text/css">    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
 </head>
 <body>
 <!--Header-->
@@ -79,14 +81,12 @@
                     <div class="benefites__reasons">
                         <h3>який не потребує:</h3>
                     </div>
-                    <!-- <div class="benefites__wrapper"> -->
                         <ul class="benefites__list">
                             <li class="benefites__item"><p>складських приміщень</p></li>
                             <li class="benefites__item"><p>вкладень у товар</p></li>
                             <li class="benefites__item"><p>освіти та дипломів</p></li>
                             <li class="benefites__item"><p>досвіду та спеціальної підготовки</p></li>
                         </ul>
-                    <!-- </div> -->
                 </div>
                 <div class="benefites__thumb">
                     <div class="benefites__reasons">
@@ -204,44 +204,56 @@
         </div>
     </section>
 <!--Reviews-->
-    <section class="reviews section hidden">
+    <section class="reviews section">
         <div class="reviews__slider">
             <h2 class="reviews__heading">результати моїх партнерів</h2>
             <ul class="reviews__list list">
                 <li class="reviews__item">
-                    <p class="reviews__title">оксана, 54 роки</p>
-                    <div class="reviews__thumb">
-                        <img class="reviews__img" src="./images/general/reviews/review_1.jpg" alt="наш клієнт Максим Коровій" width="80px" height="auto">
+                    <div class="reviews__person">
+                        <h3 class="reviews__title">оксана, 54 роки</h3>
                     </div>
+                    <img class="reviews__img" src="./images/person-1.jpg" alt="наш клієнт Максим Коровій" width="300" height="auto">
                 </li>
                 <li class="reviews__item">
-                    <p class="reviews__title">smm-спеціаліст</p>
-                    <div class="reviews__thumb">
-                        <img class="reviews__img" src="./images/general/reviews/review_1.jpg" alt="наш клієнт Максим Коровій" width="80px" height="auto">
+                    <div class="reviews__person">
+                        <h3 class="reviews__title">smm-спеціаліст</h3>
                     </div>
+                    <img class="reviews__img" src="./images/person-1.jpg" alt="наш клієнт Максим Коровій" width="300" height="auto">
                 </li>
                 <li class="reviews__item">
-                    <p class="reviews__title">студентка</p>
-                    <div class="reviews__thumb">
-                        <img class="reviews__img" src="./images/general/reviews/review_1.jpg" alt="наш клієнт Максим Коровій" width="80px" height="auto">
+                    <div class="reviews__person">
+                        <h3 class="reviews__title">студентка</h3>
                     </div>
+                    <img class="reviews__img" src="./images/person-1.jpg" alt="наш клієнт Максим Коровій" width="300" height="auto">
+                </li>
+                <li class="reviews__item">
+                    <div class="reviews__person">
+                        <h3 class="reviews__title">студентка</h3>
+                    </div>
+                    <img class="reviews__img" src="./images/person-1.jpg" alt="наш клієнт Максим Коровій" width="300" height="auto">
+                </li>
+                <li class="reviews__item">
+                    <div class="reviews__person">
+                        <h3 class="reviews__title">студентка</h3>
+                    </div>
+                    <img class="reviews__img" src="./images/person-1.jpg" alt="наш клієнт Максим Коровій" width="300" height="auto">
                 </li>
             </ul>
             <div class="reviews-slider__wrapper">
                 <button class="reviews-slider__prev-button">
-                    <svg class="reviews-slider__icon" width="20" height="20">
-                        <use href="./images/icons.svg#icon-ar-down"></use>
-                    </svg>
+                    <span class="reviews-slider__icon" width="20" height="20">
+                        <img src="images/icon-back.png" alt="">
+                    </span>
                 </button>
                 <button class="reviews-slider__next-button">
-                    <svg class="reviews-slider__icon" width="20" height="20">
-                        <use href="./images/icons.svg#icon-ar-down"></use>
-                    </svg>
+                    <span class="reviews-slider__icon" width="20" height="20">
+                        <img src="images/icon-forward.png" alt="">
+                    </span>
                 </button>
             </div>
         </div>
     </section>
-<!--Reviews-->
+<!--CTA-->
 <section class="cta section hidden">
     <p class="cta__sub-title"><span class="current">Якщо готові вже сьогодні зробити перший крок до змін,</span></p>
     <p class="cta__sub-title">то заповнюйте форму для запису на консультацію і отримайте особистий план для реалізації ваших цілей.</p>
@@ -280,8 +292,10 @@
 </div>
 
 <script src="./libs/youtubeLightbox/youtubeLightbox.js"></script>
-
-<script src="./js/main.js"></script>
 <script defer src="./js/questions.js"></script>
+
+<script src="./js/slick-slider.js"></script>
+<script defer src="./js/reviews-slider.js"></script>
+
 </body>
 </html>
