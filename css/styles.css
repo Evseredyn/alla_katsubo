@@ -717,7 +717,7 @@ height: auto;
     
     .story {
         position: relative;
-        padding: 40px 10px 40px 5px;
+        padding: 40px 0;
         background-image: url('../images/bg-2.jpg');
         background-size: cover;
         background-repeat: no-repeat;
@@ -786,7 +786,6 @@ height: auto;
         flex-basis: calc((100% - 60px) / 2);
         flex-grow: 1;
         flex-shrink: 1;
-        padding-bottom: 5px;
         border-radius: 20px;
         background-color: var(--thumb-bg-color);
     }
@@ -924,7 +923,7 @@ height: auto;
     .questions__item {
         margin-left: auto;
         margin-right: auto;
-        padding: 20px 15px ;
+        padding: 20px 20px ;
         background-color: var(--bright-bg-color);
         border-radius: 20px;
         cursor: pointer;
@@ -938,7 +937,6 @@ height: auto;
         position: relative;
         margin-bottom: 20px;
         padding-right: 40px;
-        font-size: 20px;
     }
     
     .questions__circul {
@@ -1002,17 +1000,10 @@ height: auto;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        /* // max-width: 330px; */
         max-width: 300px;
-        /* height: 350px; */
         margin-left: 15px;
         margin-right: 15px;
     }
-    
-    
-    /* .reviews__item:not(:first-child) {
-        margin-right: 30px;
-    } */
     
     .reviews__person {
         display: flex;
@@ -1037,7 +1028,6 @@ height: auto;
         display: flex;
         align-items: center;
         justify-content: space-between;
-        gap: 10px;
         width: 110px;
         margin-top: 40px;
         margin-left: auto;
@@ -1054,8 +1044,6 @@ height: auto;
     }
     
     .reviews-slider__icon img {
-      /* width: 32px;
-      height: 32px; */
       object-fit: contain;
       display: block;
     }
@@ -1083,11 +1071,8 @@ height: auto;
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 260px;
-        /* margin-bottom: 30px; */
-        /* margin-left: auto;
-        margin-right: auto; */
-        padding: 20px 20px;
+        width: 240px;
+        padding: 30px 20px;
         background-color: #E6CC9F;
         border: 2px solid var(--black-text-color);
         border-radius: 20px;
@@ -1103,7 +1088,7 @@ height: auto;
     .contact-us__input {
         display: block;
         text-align: center;
-        max-width: 220px;
+        max-width: 200px;
         height: 40px;
         margin-bottom: 20px;
         padding: 17px 20px 13px;
@@ -1123,7 +1108,7 @@ height: auto;
         height: 40px;
         padding-top: 3px;
         font-family: "Bebas Neue Cyrillic";
-        font-size: 28px;
+        font-size: 24px;
         line-height: 1;
         text-align: center;
         color: var(--white-text-color);
@@ -1185,55 +1170,53 @@ height: auto;
 @media screen and (min-width: 1200px) {
 
     .container {
-        margin-left: 40px;
-        margin-right: 40px;
+        margin-left: 100px;
+        margin-right: 100px;
         padding-left: 10px;
         padding-right: 10px;
     }
     
     .section {
-        padding: 20x 0;
+        padding: 40x 0;
     }
     
     .header {
-        height: 60px;
+        height: 80px;
     }
 
     .hero {
-        padding-bottom: 30px;
+        padding-bottom: 40px;
     }
 
     .hero__heading {
-        width: 460px;
+        width: 700px;
         position: relative;
         text-align: start;
-        font-size: 36px;
+        font-size: 56px;
     }
     
     .hero__heading::after {
         content: "";
         position: absolute;
-        right: 0;
+        right: 2%;
         bottom: 1%;
-        width: 115px;
+        width: 170px;
         height: 3px;
         background-color: var(--akcent-color);
     }
     
     .hero__thumb {
-        margin-top: 30px;
-        margin-bottom: 30px;
+        margin-top: 40px;
+        margin-bottom: 40px;
     }
     
     .hero__title {
-        /* margin: 0 15px; */
-        font-size: 28px;
+        font-size: 40px;
         color: var(--akcent-color);
     }
     
     .hero__sub-title {
-        /* margin: 0 15px; */
-        font-size: 20px;
+        font-size: 24px;
         letter-spacing: 0.02em;
     }
     
@@ -1241,6 +1224,7 @@ height: auto;
         position: relative;
         padding: 15px 40px;
         height: auto;
+        /* max-height: 250px; */
         background-color: #BD9353;
         border-radius: 30px;
     }
@@ -1259,14 +1243,14 @@ height: auto;
 
     .hero__group--pc {
         display: block;
-        max-width: 240px;
+        max-width: 400px;
     }
 
     .hero__image {
         position: absolute;
         bottom: 0;
         right: 30px;
-        width: 290px;
+        width: 400px;
         height: auto;
     }
 
@@ -1278,18 +1262,18 @@ height: auto;
     }
     
     .hero__list>li:not(:last-child) {
-        margin-bottom: 5px;
+        margin-bottom: 12px;
     }
     
     .hero__list>li>h4 {
         text-align: center;
-        font-size: 14px;
+        font-size: 24px;
         letter-spacing: 0.04em;
     }
     
     .story {
         position: relative;
-        padding: 40px 10px 40px 5px;
+        padding: 40px 0;
         background-image: url('../images/bg-2.jpg');
         background-size: cover;
         background-repeat: no-repeat;
@@ -1318,12 +1302,12 @@ height: auto;
     
     .story__heading {
         margin-bottom: 30px;
-        font-size: 24px;
+        font-size: 40px;
         text-align: center;
     }
     
     .story__list>li {
-        font-size: 16px;
+        font-size: 20px;
         line-height: 1.2;
         letter-spacing: 0.02em;
     }
@@ -1342,8 +1326,8 @@ height: auto;
     
     .benefites__heading {
         text-align: center;
-        margin-bottom: 30px;
-        font-size: 24px;
+        margin-bottom: 40px;
+        font-size: 40px;
     }
     
     .benefites__group {
@@ -1356,7 +1340,6 @@ height: auto;
         flex-basis: calc((100% - 60px) / 2);
         flex-grow: 1;
         flex-shrink: 1;
-        padding-bottom: 5px;
         border-radius: 20px;
         background-color: var(--thumb-bg-color);
     }
@@ -1371,23 +1354,19 @@ height: auto;
         align-items: center;
         justify-content: center;
     
-        height: 47px;
+        height: 60px;
         background-color:  var(--bright-bg-color);
         border-radius: 20px 20px 0 0;
         border: 1px solid var(--thumb-bg-color);
     }
     
     .benefites__reasons>h3 {
-        font-size: 20px;
+        font-size: 28px;
         color: var(--akcent-color);
     }
     
-    /* .benefites__list {
-        padding-right: 25px;
-    } */
-    
     .benefites__item>p {
-        font-size: 16px;
+        font-size: 20px;
         line-height: 1.2;
         letter-spacing: 0.02em;
         opacity: 0.8;
@@ -1399,13 +1378,13 @@ height: auto;
     }
 
     .video__heading {
-        margin-bottom: 30px;
-        font-size: 24px;
+        margin-bottom: 40px;
+        font-size: 40px;
         text-align: center;
     }
     
     .video__heading:not(:first-child) {
-        margin-top: 30px;
+        margin-top: 40px;
     }
     
     .video__link {
@@ -1433,8 +1412,8 @@ height: auto;
     
     .pains__heading {
         text-align: center;
-        margin-bottom: 30px;
-        font-size: 24px;
+        margin-bottom: 40px;
+        font-size: 40px;
         color: var(--akcent-color);
     }
     
@@ -1451,7 +1430,7 @@ height: auto;
     }
     
     .pains__item>p {
-        font-size: 16px;
+        font-size: 20px;
         letter-spacing: 0.02em;
         line-height: 1.4;
         opacity: 0.8;
@@ -1463,12 +1442,12 @@ height: auto;
     
     .promises__heading {
         margin-bottom: 30px;
-        font-size: 24px;
+        font-size: 40px;
         color: var(--akcent-color);
     }
     
     .promises__item>p {
-        font-size: 16px;
+        font-size: 24px;
         letter-spacing: 0.02em;
         line-height: 1.4;
 
@@ -1482,30 +1461,28 @@ height: auto;
     
     .questions__heading {
         margin-bottom: 30px;
-        /* margin: 0 auto 20px auto; */
         text-align: center;
-        font-size: 24px;
+        font-size: 40px;
         color: var(--white-text-color);
     }
     
     .questions__item {
         margin-left: auto;
         margin-right: auto;
-        padding: 20px 15px ;
+        padding: 25px 35px;
         background-color: var(--bright-bg-color);
         border-radius: 20px;
         cursor: pointer;
     }
     
     .questions__title {
-        font-size: 20px;
+        font-size: 24px;
     }
 
     .questions__inner {
         position: relative;
         margin-bottom: 20px;
         padding-right: 40px;
-        font-size: 20px;
     }
     
     .questions__circul {
@@ -1540,7 +1517,7 @@ height: auto;
     }
     
     .questions__text {
-        font-size: 16px;
+        font-size: 20px;
         letter-spacing: 0.04em;
     }
     
@@ -1549,14 +1526,14 @@ height: auto;
     }
     
     .reviews {
-        padding: 40px 15px;
+        padding: 40px 100px;
     }
     
     .reviews__heading {
         margin-bottom: 30px;
     
         text-align: center;
-        font-size: 24px;
+        font-size: 40px;
     }
     
     .reviews__list {
@@ -1569,30 +1546,23 @@ height: auto;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        /* // max-width: 330px; */
         max-width: 300px;
-        /* height: 350px; */
         margin-left: 15px;
         margin-right: 15px;
     }
-    
-    
-    /* .reviews__item:not(:first-child) {
-        margin-right: 30px;
-    } */
     
     .reviews__person {
         display: flex;
         align-items: center;
         justify-content: center;
     
-        height: 47px;
+        height: 60px;
         background-color:  var(--bright-bg-color);
         border-radius: 20px 20px 0 0;
     }
     
     .reviews__title {
-        font-size: 20px;
+        font-size: 28px;
         color: var(--akcent-color);
     }
     
@@ -1604,7 +1574,6 @@ height: auto;
         display: flex;
         align-items: center;
         justify-content: space-between;
-        gap: 10px;
         width: 110px;
         margin-top: 40px;
         margin-left: auto;
@@ -1621,8 +1590,6 @@ height: auto;
     }
     
     .reviews-slider__icon img {
-      /* width: 32px;
-      height: 32px; */
       object-fit: contain;
       display: block;
     }
@@ -1630,28 +1597,27 @@ height: auto;
     .cta {
         position: relative;
         padding: 40px 15px;
-        height: 400px;
+        height: 370px;
         background-color: var(--secondary-bg-color);
     }
     
     .cta__sub-title {
-        width: 400px;
+        width: 500px;
         font-size: 20px;
     }
     
     .cta__sub-title:not(:first-child) {
-        margin-bottom: 100px;
+        margin-bottom: 110px;
     }
     
     .contact-us__form {
         position: absolute;
-        right: 10px;
+        right: 200px;
         top: 30px;
         display: flex;
         flex-direction: column;
         align-items: center;
         width: 260px;
-        margin-bottom: 30px;
         margin-left: auto;
         margin-right: auto;
         padding: 30px 20px;
@@ -1670,8 +1636,8 @@ height: auto;
     .contact-us__input {
         display: block;
         text-align: center;
-        max-width: 220px;
-        height: 50px;
+        max-width: 200px;
+        height: 40px;
         margin-bottom: 30px;
         padding: 17px 20px 13px;
         font-family: "Bebas Neue Cyrillic";
@@ -1687,10 +1653,10 @@ height: auto;
         align-items: center;
         justify-content: center;
         width: 170px;
-        height: 50px;
+        height: 40px;
         padding-top: 3px;
         font-family: "Bebas Neue Cyrillic";
-        font-size: 28px;
+        font-size: 24px;
         line-height: 1;
         text-align: center;
         color: var(--white-text-color);
@@ -1710,8 +1676,8 @@ height: auto;
     
     .cta__thumb img {
         position: absolute;
-        top: -80px;
-        left: 20%;
+        top: -160px;
+        left: 50%;
         width: 55px;
         height: auto;
     }
@@ -1721,21 +1687,21 @@ height: auto;
     }
 
     .cta__text {
-        font-size: 20px;
+        font-size: 24px;
     }
     
     .cta__sub-text {
-        font-size: 20px;
+        font-size: 24px;
     }
     
     .socials__list {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        width: 300px;
+        width: 320px;
         margin: 0;
         margin-top: 30px;
-        margin-left: 35px;
+        margin-left: 55px;
         padding: 0;
         list-style: none;
     }
