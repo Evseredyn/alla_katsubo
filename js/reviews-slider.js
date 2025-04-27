@@ -13,27 +13,33 @@ $(document).ready(function() {
       arrows: false, // Не відображати стрілки навігації
       responsive: [
         {
-          breakpoint: 420, // Розмір екрану, на якому застосовуються ці налаштування
+          breakpoint: 400, // Розмір екрану, на якому застосовуються ці налаштування
           settings: {
-            slidesToShow: 1, // Кількість відгуків на мобільному
+            slidesToShow: 1.2, // Кількість відгуків на мобільному
           }
         },
-        // {
-        //   breakpoint: 580,
-        //   settings: {
-        //     slidesToShow: 1.2, // Кількість відгуків на планшеті
-        //   }
-        // },
         {
-          breakpoint: 744,
+          breakpoint: 425, // Розмір екрану, на якому застосовуються ці налаштування
+          settings: {
+            slidesToShow: 1.2, // Кількість відгуків на мобільному
+          }
+        },
+        {
+          breakpoint: 580,
           settings: {
             slidesToShow: 2, // Кількість відгуків на планшеті
           }
         },
         {
-          breakpoint: 1080,
+          breakpoint: 744,
           settings: {
             slidesToShow: 3, // Кількість відгуків на планшеті
+          }
+        },
+        {
+          breakpoint: 1080,
+          settings: {
+            slidesToShow: 4, // Кількість відгуків на планшеті
           }
         },
         {
