@@ -106,7 +106,7 @@ img {
 .hero__heading::after {
     content: "";
     position: absolute;
-    right: 0;
+    right: 10%;
     bottom: 0;
     width: 65px;
     height: 3px;
@@ -643,7 +643,7 @@ height: auto;
     .hero__heading::after {
         content: "";
         position: absolute;
-        right: 0;
+        right: 5%;
         bottom: 1%;
         width: 115px;
         height: 3px;
