@@ -474,7 +474,8 @@ height: auto;
 }
 
 .reviews__img {
-    border-radius: 0 0 20px 20px;
+    /* border-radius: 0 0 20px 20px; */
+    border-radius: 20px;
 }
 
 .reviews-slider__wrapper {
@@ -1031,7 +1032,8 @@ height: auto;
     }
     
     .reviews__img {
-        border-radius: 0 0 20px 20px;
+        /* border-radius: 0 0 20px 20px; */
+        border-radius: 20px;
     }
     
     .reviews-slider__wrapper {
@@ -1587,7 +1589,8 @@ height: auto;
     }
     
     .reviews__img {
-        border-radius: 0 0 20px 20px;
+        /* border-radius: 0 0 20px 20px; */
+        border-radius: 20px;
     }
     
     .reviews-slider__wrapper {
