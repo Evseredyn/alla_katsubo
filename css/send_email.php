@@ -10,7 +10,7 @@ $name = htmlspecialchars($_POST['name']);
 $phone = htmlspecialchars($_POST['phone']);
 
 // Email отримувача
-$to = "zhenyavn@gmail.com, druga.poshta@example.com"; // Заміни на свій email
+$to = "zhenyavn@gmail.com, allakatsubo2025@gmail.com"; // Заміни на свій email
 
 // Тема листа
 $subject = "Нова реєстрація з лендінгу";
