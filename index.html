@@ -239,7 +239,7 @@
     <section class="reviews section">
         <div class="section">
             <div class="reviews__slider">
-                <h2 class="reviews__heading">результати моїх партнерів</h2>
+                <h2 class="reviews__heading">приклади доходів в нашій команді</h2>
                 <ul class="reviews__list list">
                     <li class="reviews__item">
                         <!--<div class="reviews__person">
@@ -292,15 +292,16 @@
     <div class="container">
         <h4 class="cta__sub-title"><span class="akcent">Якщо готові вже сьогодні зробити перший крок до змін,</span></h4>
         <h4 class="cta__sub-title">то заповнюйте форму для запису на консультацію і отримайте особистий план для реалізації ваших цілей.</h4>
-        <form class="contact-us__form" action="">
+        <form class="contact-us__form" action="send_email.php" method="POST">
             <!-- <label  for=""><input type="text"></label>
             <label  for=""><input type="text"></label> -->
             <p class="contact-us__title">форма реєстрації</p>
-            <input class="contact-us__input" type="text" name="subscripe" placeholder="ваше імʼя">
-            <input class="contact-us__input" type="text" name="subscripe" placeholder="ваш телефон">
+            <input class="contact-us__input" type="text" name="name" placeholder="ваше імʼя" required>
+            <input class="contact-us__input" type="tel" name="phone" placeholder="ваш телефон" required>
+            <input type="hidden" id="secret1" name="secret" value="">
             <div class="contact-us__button">
                 <!-- <div class="contact-us__button-background"></div> -->
-                <button class="contact-us__button"  type="submit">надіслати</button>
+                <button class="contact-us__button dop-btn1"  type="submit">надіслати</button>
             </div>
         </form>
         <div class="cta__thumb">
@@ -340,6 +341,13 @@
 
 <script src="./js/slick-slider.js"></script>
 <script defer src="./js/reviews-slider.js"></script>
+
+<script>
+    let secret1 = document.querySelector('#secret1'); 
+    document.querySelector('.dop-btn1').onclick = function(){
+      secret1.value = 'secretkey';
+    };
+  </script>
 
 </body>
 </html>
